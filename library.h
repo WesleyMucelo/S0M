@@ -14,18 +14,13 @@
  */
 
 
-// Declaração de novos tipos de dados para utilizar máscaras
-// facilitar a criaçao de mascaras que vao ajudar na definiçao de operaçoes que so vao ser possiveis sobre um determinado tipo.
+// Declaração de novos tipos de dados para utilizar máscaras facilitar a criaçao de mascaras que vao ajudar na definiçao de operaçoes que so vao ser possiveis sobre um determinado tipo.
 typedef enum {
     LONG = 1,
     DOUBLE = 2,
     CHAR = 4,
     STRING = 8
 } TYPE;
-
-// Definicao das mascaras que vao facilitar em saber se por exemplo a operacao é sobre um numero ou letra...
-//#define INTEGER (LONG | CHAR)
-//#define NUMBER  (LONG | DOUBLE)
 
 // Declaraco dos tipos de dados que estao na stack cada tipo tem um campo(ex: tipo: long -> campo: LONG)
 typedef struct {
@@ -38,16 +33,16 @@ typedef struct {
 
 // Estrutura da Stack
 typedef struct stack {
-    DADOS *stack;    // a stack vai ser um array do tipo DADOS * para puder ser alocado dinamicamente
+    DADOS *stack;
     int tamanho;
-    int sp; // Funciona como o stack pointer;
+    int sp;
 } STACK;
 
 int verify (DADOS elem, int mascara);
 STACK *cria_stack();
 void push (STACK *s, DADOS elem);
 DADOS pop (STACK *s);
-//int verify_Empty (STACK *s);
+int verify_Empty (STACK *s);
 void imprime_stack (STACK *s);
 
 
