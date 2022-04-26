@@ -55,14 +55,14 @@ DADOS pop(STACK *s) {
 }
 
 // Funcao que aponta para o topo da stack.
-//DADOS top(STACK *s) {
-//    return s->stack[s->sp - 1];
-//}
+DADOS top(STACK *s) {
+    return s->stack[s->sp - 1];
+}
 
 // Funcao que verifica se a STACK esta vazia
-//int verify_Empty(STACK *s) {
-//    return s->sp == 0;
-//}
+int verify_Empty(STACK *s) {
+    return s->sp == 0;
+}
 
 // Funcao que imprime a STACK
 void imprime_stack (STACK *s) {
