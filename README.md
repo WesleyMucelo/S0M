@@ -15,6 +15,7 @@ This project was developed by me and my college friends as a computer lab projec
 
 
 *Stack*
+
     _                       Duplicate
     ;                       Pop
     \                       Swap the top two elements of the stack
