@@ -31,7 +31,6 @@ int verify(DADOS elem, int mascara) {
 // Funcao que cria a STACK
 STACK *cria_stack() {
     STACK *s = (STACK *) malloc(sizeof(STACK));
-//    s->sp = BUFSIZ;
     s->tamanho = BUFSIZ;
     s->stack = (DADOS *) calloc(s->tamanho, sizeof(DADOS));
     return s;
