@@ -1,2 +1,2 @@
-# S0M
+# $0M
  Stack oriented programming language interpreter
