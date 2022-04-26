@@ -3,7 +3,7 @@
 
 int main() {
 
-    char token [BUFSIZ]; // Tamanho da string para especificar o formado que dever ser recebida
+    char token [BUFSIZ];
 
     assert(fgets(token, BUFSIZ, stdin) != NULL);
     assert(token[strlen(token) - 1] == '\n');
