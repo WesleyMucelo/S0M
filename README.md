@@ -96,6 +96,7 @@ imprimir o conteúdo da stack no *stdout*.
     w       Executa o bloco enquanto ele deixar um truthy
             no topo da stack; Remove da stack a condição
 
+
 # Exemplos
 
 <table>
@@ -154,14 +155,6 @@ neta</td>
 </tbody>
 </table>
 
-# FASE 1
-
-  - Pretende-se que implemente a parte das expressões matemáticas
-  - O seu programa deve:
-    1.  ler uma linha;
-    2.  correr o código correspondente
-    3.  imprimir o conteúdo da stack no fim da execução
-
 | Input            | Resultado |
 | :--------------- | :-------- |
 | 5 4 -            | 1         |
@@ -172,13 +165,6 @@ neta</td>
 | 2 5 ^            | 7         |
 | 2 5 &            | 0         |
 | 12 7 2 & |       | 14        |
-
-# FASE 2
-
-  - Pretende-se que implemente a parte correspondente à:
-      - manipulação da stack,
-      - conversão de tipos e
-      - Leitura: comando l
 
 <table>
 <colgroup>
@@ -229,30 +215,19 @@ neta</td>
 </tbody>
 </table>
 
-# FASE 3
-
-  - Pretende-se que implemente um debugger
-  - A parte correspondente às:
-      - variáveis
-      - lógica e condições
-
 | Input           | Resultado |
 | :-------------- | :-------- |
 | 7 2 3 ?         | 2         |
 | 5 2 = 2 3 ?     | 3         |
 | 1 3 e&          | 3         |
 | 0 3 e&          | 0         |
-| 1 2 e|          | 1         |
-| 0 2 e|          | 2         |
+| 1 2 e||         | 1         |
+| 0 2 e||         | 2         |
 | 3 2 1 + =       | 1         |
 | 3 5 = \! 7 2 \> | 11        |
 | 1 2 \< 2 1 \>   | 11        |
 | 3 5 2 e\< e\<   | 2         |
 | A B \* :T T     | 110110    |
-
-# FASE 4
-
-  - Pretende-se que implemente a parte correspondente aos arrays
 
 <table>
 <colgroup>
