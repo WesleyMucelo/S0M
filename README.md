@@ -154,7 +154,7 @@ neta</td>
 </tbody>
 </table>
 
-# Guião 1
+# FASE 1
 
   - Pretende-se que implemente a parte das expressões matemáticas
   - O seu programa deve:
@@ -173,7 +173,7 @@ neta</td>
 | 2 5 &            | 0         |
 | 12 7 2 & |       | 14        |
 
-# Guião 2
+# FASE 2
 
   - Pretende-se que implemente a parte correspondente à:
       - manipulação da stack,
@@ -229,7 +229,7 @@ neta</td>
 </tbody>
 </table>
 
-# Guião 3
+# FASE 3
 
   - Pretende-se que implemente um debugger
   - A parte correspondente às:
@@ -250,7 +250,7 @@ neta</td>
 | 3 5 2 e\< e\<   | 2         |
 | A B \* :T T     | 110110    |
 
-# Guião 4
+# FASE 4
 
   - Pretende-se que implemente a parte correspondente aos arrays
 
@@ -319,59 +319,3 @@ barao vermelho</td>
 </tbody>
 </table>
 
-# Guião 5
-
-  - Pretende-se que implemente a parte correspondente aos blocos
-
-<table>
-<colgroup>
-<col style="width: 47%" />
-<col style="width: 52%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Input</th>
-<th style="text-align: left;">Resultado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">2 { 3 * }</td>
-<td style="text-align: left;">2{ 3 * }</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2 { 3 * } ~</td>
-<td style="text-align: left;">6</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">[ 1 2 3 ] { 2 # } %</td>
-<td style="text-align: left;">149</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">l { ( ( } %<br />
-qnc</td>
-<td style="text-align: left;">ola</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">5 , { ) } %</td>
-<td style="text-align: left;">12345</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">5 , { 2 % } ,</td>
-<td style="text-align: left;">13</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">10 , { 3 % ! } ,</td>
-<td style="text-align: left;">0369</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">10 , { ) } % { * } *</td>
-<td style="text-align: left;">3628800</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">t S/ { i } % { e&gt; } *<br />
-2 7 13 4</td>
-<td style="text-align: left;">13</td>
-</tr>
-</tbody>
-</table>
