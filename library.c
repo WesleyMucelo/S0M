@@ -4,18 +4,19 @@
  * Neste fucherio estao contidas as direfentes funcoes que modificam a stack.
  */
 
+
 // Sequencia de macros
 #define STACK_OPERATION(_type, _name)          \
     void push_##_name(STACK *s, _type val) {  \
     DADOS elem;                               \
     elem.type = _name;                        \
-    elem._name = val;                         \
+    elem.celula._name = val;                         \
     push(s, elem);                            \
     }                                         \
     _type pop_##_name(STACK *s) {             \
     DADOS elem = pop(s);                      \
     elem.type = _name;                        \
-    return elem._name;                        \
+    return elem.celula._name;                        \
     }
 
 STACK_OPERATION(long, LONG)
@@ -46,7 +47,6 @@ void push(STACK *s, DADOS elem) {
     s->sp++;
 }
 
-
 // Funcao que retira o elemento que esta no topo da stack.
 DADOS pop(STACK *s) {
     s->sp--;
@@ -58,24 +58,39 @@ DADOS top(STACK *s) {
     return s->stack[s->sp - 1];
 }
 
-// Funcao que verifica se a STACK esta vazia
-int verify_Empty(STACK *s) {
-    return s->sp == 0;
+void printa(DADOS elem)
+{
+    switch(elem.type)
+    {
+        case LONG:
+        {
+            printf("%ld", elem.celula.LONG);
+            return;
+        }
+        case CHAR:
+        {
+            printf("%c", elem.celula.CHAR);
+            return;
+        }
+        case DOUBLE:
+        {
+            printf("%g", elem.celula.DOUBLE);
+            return;
+        }
+        case STRING:
+        {
+            printf("%s", elem.celula.STRING);
+            return;
+        }
+    }
 }
 
 // Funcao que imprime a STACK
 void imprime_stack (STACK *s) {
-    for (int i = 0; i < s->sp; i++) {
+    for (int i = 0; i < s->sp; i++)
+    {
         DADOS elem = s->stack[i];
-        TYPE tipo = elem.type;
-        if (tipo == LONG)
-            printf("%ld", elem.LONG);
-        else if (tipo == DOUBLE)
-            printf("%g", elem.DOUBLE);
-        else if (tipo == CHAR)
-            printf("%c", elem.CHAR);
-        else if (tipo == STRING)
-            printf("%s", elem.STRING);
+        printa(elem);
     }
     printf("\n");
 }

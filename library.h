@@ -3,6 +3,7 @@
 #include <string.h>
 #include <assert.h>
 #include <math.h>
+#include <ctype.h>
 
 
 #ifndef LAB22_LIBRARY_H
@@ -14,35 +15,38 @@
  */
 
 
-// Declaração de novos tipos de dados para utilizar máscaras facilitar a criaçao de mascaras que vao ajudar na definiçao de operaçoes que so vao ser possiveis sobre um determinado tipo.
+// Declaração de novos tipos de dados para utilizar máscaras
+// facilitar a criaçao de mascaras que vao ajudar na definiçao de operaçoes que so vao ser possiveis sobre um determinado tipo.
 typedef enum {
-    LONG = 1,
+    LONG   = 1,
     DOUBLE = 2,
-    CHAR = 4,
+    CHAR   = 4,
     STRING = 8
 } TYPE;
 
 // Declaraco dos tipos de dados que estao na stack cada tipo tem um campo(ex: tipo: long -> campo: LONG)
 typedef struct {
     TYPE    type;
-    long    LONG;
-    double  DOUBLE;
-    char    CHAR;
-    char    *STRING;
+    union {
+        long LONG;
+        double DOUBLE;
+        char CHAR;
+        char *STRING;
+    } celula;
 } DADOS;
 
 // Estrutura da Stack
 typedef struct stack {
-    DADOS *stack;
+    DADOS *stack;    // a stack vai ser um array do tipo DADOS * para puder ser alocado dinamicamente
     int tamanho;
-    int sp;
+    int sp; // Funciona como o stack pointer;
 } STACK;
 
 int verify (DADOS elem, int mascara);
 STACK *cria_stack();
 void push (STACK *s, DADOS elem);
 DADOS pop (STACK *s);
-int verify_Empty (STACK *s);
+DADOS top(STACK *s);
 void imprime_stack (STACK *s);
 
 
