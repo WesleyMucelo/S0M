@@ -1,0 +1,309 @@
+\hypertarget{library_8h}{}\doxysection{library.\+h File Reference}
+\label{library_8h}\index{library.h@{library.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structDADOS}{DADOS}}
+\begin{DoxyCompactList}\small\item\em Definição da estrutura de dados que define o tipo \mbox{\hyperlink{structDADOS}{DADOS}}. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structstack}{stack}}
+\begin{DoxyCompactList}\small\item\em Definição da estrutura da stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{library_8h_aa7e195e1283260f6225089d9c6e4f184}{STACK\+\_\+\+OPERATION\+\_\+\+PROTO}}(\+\_\+type,  \+\_\+name)
+\begin{DoxyCompactList}\small\item\em Sequência de macros para auxiliar aos tipos de dados da stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{library_8h_ade8bb1f37e07eb511f3873082665d739}\label{library_8h_ade8bb1f37e07eb511f3873082665d739}} 
+typedef struct \mbox{\hyperlink{structstack}{stack}} {\bfseries STACK}
+\begin{DoxyCompactList}\small\item\em Definição da estrutura da stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7}{TYPE}} \{ \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}} = 1
+, \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7a33465d1d419b1074fb259ef444609e92}{DOUBLE}} = 2
+, \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7a4618cf21306b3c647741afa7ebefcab8}{CHAR}} = 4
+, \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aee847e634a4297b274316de8a8ca9921}{STRING}} = 8
+ \}
+\begin{DoxyCompactList}\small\item\em Definição do tipo enum que enumera os tipos de variáveis possíveis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{library_8h_aadda0f5cce633929d0589eec330c2cbc}{verify}} (\mbox{\hyperlink{structDADOS}{DADOS}} elem, int mascara)
+\begin{DoxyCompactList}\small\item\em Definição dos protótipos do módulo \mbox{\hyperlink{library_8c}{library.\+c}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{library_8h_ade8bb1f37e07eb511f3873082665d739}{STACK}} $\ast$ \mbox{\hyperlink{library_8h_abc9159ee0421209d15e13792a2556ce8}{cria\+\_\+stack}} ()
+\begin{DoxyCompactList}\small\item\em Funçao que cria uma STACK vazia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{library_8h_a6da247d11bbdc02f685775c0ad7683e5}{push}} (\mbox{\hyperlink{library_8h_ade8bb1f37e07eb511f3873082665d739}{STACK}} $\ast$s, \mbox{\hyperlink{structDADOS}{DADOS}} elem)
+\begin{DoxyCompactList}\small\item\em Função que adiciona um elemento ao topo da stack. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDADOS}{DADOS}} \mbox{\hyperlink{library_8h_aec9ac4a3a9271f16fd6aa58771182ca2}{pop}} (\mbox{\hyperlink{library_8h_ade8bb1f37e07eb511f3873082665d739}{STACK}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira o elemento que está no topo da stack. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDADOS}{DADOS}} \mbox{\hyperlink{library_8h_a37b995ce0da16a4b6b90ca8f1f52eef7}{top}} (\mbox{\hyperlink{library_8h_ade8bb1f37e07eb511f3873082665d739}{STACK}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que aponta para o topo da stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{library_8h_ad0abe05393e31e10c053d65792a65d30}{imprime\+\_\+stack}} (\mbox{\hyperlink{library_8h_ade8bb1f37e07eb511f3873082665d739}{STACK}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que aponta para o conteúdo da stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A stack é uma estrutura estrutura de dados linear na ordem \textquotesingle{}Last In First Out\textquotesingle{} (LIFO), sendo nessa ordem que são realizadas e caracteriza um empilhamento de dados.
+
+Neste ficheiro tem-\/se como objectivo a implementação da stack. 
+
+Definition in file \mbox{\hyperlink{library_8h_source}{library.\+h}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{library_8h_aa7e195e1283260f6225089d9c6e4f184}\label{library_8h_aa7e195e1283260f6225089d9c6e4f184}} 
+\index{library.h@{library.h}!STACK\_OPERATION\_PROTO@{STACK\_OPERATION\_PROTO}}
+\index{STACK\_OPERATION\_PROTO@{STACK\_OPERATION\_PROTO}!library.h@{library.h}}
+\doxysubsubsection{\texorpdfstring{STACK\_OPERATION\_PROTO}{STACK\_OPERATION\_PROTO}}
+{\footnotesize\ttfamily \#define STACK\+\_\+\+OPERATION\+\_\+\+PROTO(\begin{DoxyParamCaption}\item[{}]{\+\_\+type,  }\item[{}]{\+\_\+name }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} push\_\#\#\_name(\mbox{\hyperlink{structstack}{STACK}} *s, \_type val); \(\backslash\)}
+\DoxyCodeLine{    \_type pop\_\#\#\_name(\mbox{\hyperlink{structstack}{STACK}} *s);}
+
+\end{DoxyCode}
+
+
+Sequência de macros para auxiliar aos tipos de dados da stack. 
+
+
+
+Definition at line \mbox{\hyperlink{library_8h_source_l00071}{71}} of file \mbox{\hyperlink{library_8h_source}{library.\+h}}.
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{library_8h_a0bc6723d5d4776ab7cdc646728b775f7}\label{library_8h_a0bc6723d5d4776ab7cdc646728b775f7}} 
+\index{library.h@{library.h}!TYPE@{TYPE}}
+\index{TYPE@{TYPE}!library.h@{library.h}}
+\doxysubsubsection{\texorpdfstring{TYPE}{TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7}{TYPE}}}
+
+
+
+Definição do tipo enum que enumera os tipos de variáveis possíveis. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LONG@{LONG}!library.h@{library.h}}\index{library.h@{library.h}!LONG@{LONG}}}\mbox{\Hypertarget{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}\label{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}} 
+LONG&Definição do tipo LONG \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOUBLE@{DOUBLE}!library.h@{library.h}}\index{library.h@{library.h}!DOUBLE@{DOUBLE}}}\mbox{\Hypertarget{library_8h_a0bc6723d5d4776ab7cdc646728b775f7a33465d1d419b1074fb259ef444609e92}\label{library_8h_a0bc6723d5d4776ab7cdc646728b775f7a33465d1d419b1074fb259ef444609e92}} 
+DOUBLE&Definição do tipo DOUBLE \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHAR@{CHAR}!library.h@{library.h}}\index{library.h@{library.h}!CHAR@{CHAR}}}\mbox{\Hypertarget{library_8h_a0bc6723d5d4776ab7cdc646728b775f7a4618cf21306b3c647741afa7ebefcab8}\label{library_8h_a0bc6723d5d4776ab7cdc646728b775f7a4618cf21306b3c647741afa7ebefcab8}} 
+CHAR&Definição do tipo CHAR \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STRING@{STRING}!library.h@{library.h}}\index{library.h@{library.h}!STRING@{STRING}}}\mbox{\Hypertarget{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aee847e634a4297b274316de8a8ca9921}\label{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aee847e634a4297b274316de8a8ca9921}} 
+STRING&Definição do tipo STRING \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{library_8h_source_l00024}{24}} of file \mbox{\hyperlink{library_8h_source}{library.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024              \{}
+\DoxyCodeLine{00025     \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}}   = 1,             }
+\DoxyCodeLine{00026     \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7a33465d1d419b1074fb259ef444609e92}{DOUBLE}} = 2,             }
+\DoxyCodeLine{00027     \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7a4618cf21306b3c647741afa7ebefcab8}{CHAR}}   = 4,             }
+\DoxyCodeLine{00028     \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aee847e634a4297b274316de8a8ca9921}{STRING}} = 8              }
+\DoxyCodeLine{00029 \} \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7}{TYPE}};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{library_8h_abc9159ee0421209d15e13792a2556ce8}\label{library_8h_abc9159ee0421209d15e13792a2556ce8}} 
+\index{library.h@{library.h}!cria\_stack@{cria\_stack}}
+\index{cria\_stack@{cria\_stack}!library.h@{library.h}}
+\doxysubsubsection{\texorpdfstring{cria\_stack()}{cria\_stack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{library_8h_ade8bb1f37e07eb511f3873082665d739}{STACK}} $\ast$ cria\+\_\+stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funçao que cria uma STACK vazia. 
+
+\begin{DoxyReturn}{Returns}
+s. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{library_8c_source_l00047}{47}} of file \mbox{\hyperlink{library_8c_source}{library.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00047                     \{}
+\DoxyCodeLine{00048     \mbox{\hyperlink{structstack}{STACK}} *s = (\mbox{\hyperlink{structstack}{STACK}} *) malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structstack}{STACK}}));}
+\DoxyCodeLine{00049     s-\/>\mbox{\hyperlink{structstack_a45103b56810e04c5f15011613f62725c}{tamanho}} = BUFSIZ;}
+\DoxyCodeLine{00050     s-\/>\mbox{\hyperlink{structstack_ac8fc5be92f20684ddfd1060b4f7ab4f7}{stack}} = (\mbox{\hyperlink{structDADOS}{DADOS}} *) calloc(s-\/>\mbox{\hyperlink{structstack_a45103b56810e04c5f15011613f62725c}{tamanho}}, \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structDADOS}{DADOS}}));}
+\DoxyCodeLine{00051     \textcolor{keywordflow}{return} s;}
+\DoxyCodeLine{00052 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{library_8h_ad0abe05393e31e10c053d65792a65d30}\label{library_8h_ad0abe05393e31e10c053d65792a65d30}} 
+\index{library.h@{library.h}!imprime\_stack@{imprime\_stack}}
+\index{imprime\_stack@{imprime\_stack}!library.h@{library.h}}
+\doxysubsubsection{\texorpdfstring{imprime\_stack()}{imprime\_stack()}}
+{\footnotesize\ttfamily void imprime\+\_\+stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{library_8h_ade8bb1f37e07eb511f3873082665d739}{STACK}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que aponta para o conteúdo da stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s.} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{library_8c_source_l00126}{126}} of file \mbox{\hyperlink{library_8c_source}{library.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00126                               \{}
+\DoxyCodeLine{00127     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < s-\/>\mbox{\hyperlink{structstack_aaa21c5f4ef50440f5ad81cdb1b343e60}{sp}}; i++)}
+\DoxyCodeLine{00128     \{}
+\DoxyCodeLine{00129         \mbox{\hyperlink{structDADOS}{DADOS}} elem = s-\/>\mbox{\hyperlink{structstack_ac8fc5be92f20684ddfd1060b4f7ab4f7}{stack}}[i];}
+\DoxyCodeLine{00130         \mbox{\hyperlink{library_8c_a5c2612fcf2378b1ed6630b7bc053a8cc}{printa}}(elem);}
+\DoxyCodeLine{00131     \}}
+\DoxyCodeLine{00132     printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{00133 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{library_8h_aec9ac4a3a9271f16fd6aa58771182ca2}\label{library_8h_aec9ac4a3a9271f16fd6aa58771182ca2}} 
+\index{library.h@{library.h}!pop@{pop}}
+\index{pop@{pop}!library.h@{library.h}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDADOS}{DADOS}} pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{library_8h_ade8bb1f37e07eb511f3873082665d739}{STACK}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira o elemento que está no topo da stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+s-\/\texorpdfstring{$>$}{>}stack\mbox{[}s-\/\texorpdfstring{$>$}{>}sp\mbox{]}. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{library_8c_source_l00074}{74}} of file \mbox{\hyperlink{library_8c_source}{library.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00074                     \{}
+\DoxyCodeLine{00075     s-\/>\mbox{\hyperlink{structstack_aaa21c5f4ef50440f5ad81cdb1b343e60}{sp}}-\/-\/;}
+\DoxyCodeLine{00076     \textcolor{keywordflow}{return} s-\/>\mbox{\hyperlink{structstack_ac8fc5be92f20684ddfd1060b4f7ab4f7}{stack}}[s-\/>\mbox{\hyperlink{structstack_aaa21c5f4ef50440f5ad81cdb1b343e60}{sp}}];}
+\DoxyCodeLine{00077 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{library_8h_a6da247d11bbdc02f685775c0ad7683e5}\label{library_8h_a6da247d11bbdc02f685775c0ad7683e5}} 
+\index{library.h@{library.h}!push@{push}}
+\index{push@{push}!library.h@{library.h}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{library_8h_ade8bb1f37e07eb511f3873082665d739}{STACK}} $\ast$}]{s,  }\item[{\mbox{\hyperlink{structDADOS}{DADOS}}}]{elem }\end{DoxyParamCaption})}
+
+
+
+Função que adiciona um elemento ao topo da stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s,elem.} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{library_8c_source_l00059}{59}} of file \mbox{\hyperlink{library_8c_source}{library.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00059                                 \{}
+\DoxyCodeLine{00060     \textcolor{keywordflow}{if} (s-\/>\mbox{\hyperlink{structstack_a45103b56810e04c5f15011613f62725c}{tamanho}} == s-\/>\mbox{\hyperlink{structstack_aaa21c5f4ef50440f5ad81cdb1b343e60}{sp}}) \{}
+\DoxyCodeLine{00061         s-\/>\mbox{\hyperlink{structstack_aaa21c5f4ef50440f5ad81cdb1b343e60}{sp}} += BUFSIZ;}
+\DoxyCodeLine{00062         s-\/>\mbox{\hyperlink{structstack_ac8fc5be92f20684ddfd1060b4f7ab4f7}{stack}} = (\mbox{\hyperlink{structDADOS}{DADOS}} *) realloc(s-\/>\mbox{\hyperlink{structstack_ac8fc5be92f20684ddfd1060b4f7ab4f7}{stack}}, s-\/>\mbox{\hyperlink{structstack_a45103b56810e04c5f15011613f62725c}{tamanho}} * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structDADOS}{DADOS}}));}
+\DoxyCodeLine{00063     \}}
+\DoxyCodeLine{00064     s-\/>\mbox{\hyperlink{structstack_ac8fc5be92f20684ddfd1060b4f7ab4f7}{stack}}[s-\/>\mbox{\hyperlink{structstack_aaa21c5f4ef50440f5ad81cdb1b343e60}{sp}}] = elem;}
+\DoxyCodeLine{00065     s-\/>\mbox{\hyperlink{structstack_aaa21c5f4ef50440f5ad81cdb1b343e60}{sp}}++;}
+\DoxyCodeLine{00066 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{library_8h_a37b995ce0da16a4b6b90ca8f1f52eef7}\label{library_8h_a37b995ce0da16a4b6b90ca8f1f52eef7}} 
+\index{library.h@{library.h}!top@{top}}
+\index{top@{top}!library.h@{library.h}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDADOS}{DADOS}} top (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{library_8h_ade8bb1f37e07eb511f3873082665d739}{STACK}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que aponta para o topo da stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+s-\/\texorpdfstring{$>$}{>}stack\mbox{[}s-\/\texorpdfstring{$>$}{>}sp -\/ 1\mbox{]}. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{library_8c_source_l00085}{85}} of file \mbox{\hyperlink{library_8c_source}{library.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00085                     \{}
+\DoxyCodeLine{00086     \textcolor{keywordflow}{return} s-\/>\mbox{\hyperlink{structstack_ac8fc5be92f20684ddfd1060b4f7ab4f7}{stack}}[s-\/>\mbox{\hyperlink{structstack_aaa21c5f4ef50440f5ad81cdb1b343e60}{sp}} -\/ 1];}
+\DoxyCodeLine{00087 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{library_8h_aadda0f5cce633929d0589eec330c2cbc}\label{library_8h_aadda0f5cce633929d0589eec330c2cbc}} 
+\index{library.h@{library.h}!verify@{verify}}
+\index{verify@{verify}!library.h@{library.h}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily int verify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structDADOS}{DADOS}}}]{elem,  }\item[{int}]{mascara }\end{DoxyParamCaption})}
+
+
+
+Definição dos protótipos do módulo \mbox{\hyperlink{library_8c}{library.\+c}}. 
+
+Definição dos protótipos do módulo \mbox{\hyperlink{library_8c}{library.\+c}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em elem,mascara.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(elem.\+type \& mascara). 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{library_8c_source_l00038}{38}} of file \mbox{\hyperlink{library_8c_source}{library.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00038                                     \{}
+\DoxyCodeLine{00039     \textcolor{keywordflow}{return} (elem.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} \& mascara) != 0;}
+\DoxyCodeLine{00040 \}}
+
+\end{DoxyCode}

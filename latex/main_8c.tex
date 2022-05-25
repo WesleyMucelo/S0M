@@ -1,0 +1,109 @@
+\hypertarget{main_8c}{}\doxysection{main.\+c File Reference}
+\label{main_8c}\index{main.c@{main.c}}
+{\ttfamily \#include \char`\"{}library.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Esta é a função principal do programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Neste ficheiro está contida a função principal do nosso programa. 
+
+Definition in file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Esta é a função principal do programa. 
+
+\begin{DoxyReturn}{Returns}
+O. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{main_8c_source_l00015}{15}} of file \mbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00015            \{}
+\DoxyCodeLine{00016 }
+\DoxyCodeLine{00017     \textcolor{keywordtype}{char} token [BUFSIZ]; \textcolor{comment}{// recebe a linha com os tokens}}
+\DoxyCodeLine{00018     \mbox{\hyperlink{structDADOS}{DADOS}} alfabeto[26];}
+\DoxyCodeLine{00019     assert(fgets(token, BUFSIZ, stdin) != NULL);}
+\DoxyCodeLine{00020     assert(token[strlen(token) -\/ 1] == \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{00021     \mbox{\hyperlink{structstack}{STACK}} *s = \mbox{\hyperlink{library_8c_abc9159ee0421209d15e13792a2556ce8}{cria\_stack}} ();}
+\DoxyCodeLine{00022 }
+\DoxyCodeLine{00023     \mbox{\hyperlink{structDADOS}{DADOS}} A;}
+\DoxyCodeLine{00024     A.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{00025     A.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 10;}
+\DoxyCodeLine{00026     alfabeto[0] = A;}
+\DoxyCodeLine{00027 }
+\DoxyCodeLine{00028     \mbox{\hyperlink{structDADOS}{DADOS}} B;}
+\DoxyCodeLine{00029     B.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{00030     B.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 11;}
+\DoxyCodeLine{00031     alfabeto[1] = B;}
+\DoxyCodeLine{00032 }
+\DoxyCodeLine{00033     \mbox{\hyperlink{structDADOS}{DADOS}} C;}
+\DoxyCodeLine{00034     C.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{00035     C.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 12;}
+\DoxyCodeLine{00036     alfabeto[2] = C;}
+\DoxyCodeLine{00037 }
+\DoxyCodeLine{00038     \mbox{\hyperlink{structDADOS}{DADOS}} D;}
+\DoxyCodeLine{00039     D.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{00040     D.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 13;}
+\DoxyCodeLine{00041     alfabeto[3] = D;}
+\DoxyCodeLine{00042 }
+\DoxyCodeLine{00043     \mbox{\hyperlink{structDADOS}{DADOS}} E;}
+\DoxyCodeLine{00044     E.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{00045     E.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 14;}
+\DoxyCodeLine{00046     alfabeto[4] = E;}
+\DoxyCodeLine{00047 }
+\DoxyCodeLine{00048     \mbox{\hyperlink{structDADOS}{DADOS}} F;}
+\DoxyCodeLine{00049     F.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{00050     F.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 15;}
+\DoxyCodeLine{00051     alfabeto[5] = F;}
+\DoxyCodeLine{00052 }
+\DoxyCodeLine{00053     \mbox{\hyperlink{structDADOS}{DADOS}} N;}
+\DoxyCodeLine{00054     N.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7a4618cf21306b3c647741afa7ebefcab8}{CHAR}};}
+\DoxyCodeLine{00055     N.celula.\mbox{\hyperlink{structDADOS_a31d90ca57d6b333d9a43ddc0181d2711}{CHAR}} = \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00056     alfabeto[13] = N;}
+\DoxyCodeLine{00057 }
+\DoxyCodeLine{00058     \mbox{\hyperlink{structDADOS}{DADOS}} S;}
+\DoxyCodeLine{00059     S.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7a4618cf21306b3c647741afa7ebefcab8}{CHAR}};}
+\DoxyCodeLine{00060     S.celula.\mbox{\hyperlink{structDADOS_a31d90ca57d6b333d9a43ddc0181d2711}{CHAR}} = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{00061     alfabeto[18] = S;}
+\DoxyCodeLine{00062 }
+\DoxyCodeLine{00063     \mbox{\hyperlink{structDADOS}{DADOS}} X;}
+\DoxyCodeLine{00064     X.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{00065     X.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 0;}
+\DoxyCodeLine{00066     alfabeto[23] = X;}
+\DoxyCodeLine{00067 }
+\DoxyCodeLine{00068     \mbox{\hyperlink{structDADOS}{DADOS}} Y;}
+\DoxyCodeLine{00069     Y.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{00070     Y.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 1;}
+\DoxyCodeLine{00071     alfabeto[24] = Y;}
+\DoxyCodeLine{00072 }
+\DoxyCodeLine{00073     \mbox{\hyperlink{structDADOS}{DADOS}} Z;}
+\DoxyCodeLine{00074     Z.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{00075     Z.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 2;}
+\DoxyCodeLine{00076     alfabeto[25] = Z;}
+\DoxyCodeLine{00077 }
+\DoxyCodeLine{00078     \mbox{\hyperlink{functions_8c_aaceecf8c6a3b84f34ea800676d53de8b}{doCase}} (s, token, alfabeto);}
+\DoxyCodeLine{00079     \mbox{\hyperlink{library_8c_ad0abe05393e31e10c053d65792a65d30}{imprime\_stack}}(s);}
+\DoxyCodeLine{00080 }
+\DoxyCodeLine{00081     free(s);}
+\DoxyCodeLine{00082     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00083 \}}
+
+\end{DoxyCode}

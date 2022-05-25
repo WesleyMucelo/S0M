@@ -1,15 +1,24 @@
+/**
+ * @file main.c
+ *
+ * Neste ficheiro está contida a função principal do nosso programa.
+ */
+
 #include "library.h"
 #include "functions.h"
 
-
+/**
+ * \brief Esta é a função principal do programa
+ *
+ * @returns O.
+ */
 int main() {
 
     char token [BUFSIZ]; // recebe a linha com os tokens
-
+    DADOS alfabeto[26];
     assert(fgets(token, BUFSIZ, stdin) != NULL);
     assert(token[strlen(token) - 1] == '\n');
     STACK *s = cria_stack ();
-    DADOS alfabeto[26];
 
     DADOS A;
     A.type = LONG;
@@ -44,7 +53,7 @@ int main() {
     DADOS N;
     N.type = CHAR;
     N.celula.CHAR = '\n';
-    alfabeto[13] = F;
+    alfabeto[13] = N;
 
     DADOS S;
     S.type = CHAR;

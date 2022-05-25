@@ -1,0 +1,78 @@
+\hypertarget{main_8c_source}{}\doxysection{main.\+c}
+\mbox{\hyperlink{main_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00007}00007 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{library_8h}{library.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00008}00008 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{functions_8h}{functions.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00015}\mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{00015}} \textcolor{keywordtype}{int} \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}() \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00017}00017     \textcolor{keywordtype}{char} token [BUFSIZ]; \textcolor{comment}{// recebe a linha com os tokens}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00018}00018     \mbox{\hyperlink{structDADOS}{DADOS}} alfabeto[26];}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00019}00019     assert(fgets(token, BUFSIZ, stdin) != NULL);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00020}00020     assert(token[strlen(token) -\/ 1] == \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00021}00021     \mbox{\hyperlink{structstack}{STACK}} *s = \mbox{\hyperlink{library_8c_abc9159ee0421209d15e13792a2556ce8}{cria\_stack}} ();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00023}00023     \mbox{\hyperlink{structDADOS}{DADOS}} A;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00024}00024     A.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00025}00025     A.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 10;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00026}00026     alfabeto[0] = A;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00028}00028     \mbox{\hyperlink{structDADOS}{DADOS}} B;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00029}00029     B.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00030}00030     B.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 11;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00031}00031     alfabeto[1] = B;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00033}00033     \mbox{\hyperlink{structDADOS}{DADOS}} C;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00034}00034     C.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00035}00035     C.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 12;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00036}00036     alfabeto[2] = C;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00038}00038     \mbox{\hyperlink{structDADOS}{DADOS}} D;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00039}00039     D.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00040}00040     D.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 13;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00041}00041     alfabeto[3] = D;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00043}00043     \mbox{\hyperlink{structDADOS}{DADOS}} E;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00044}00044     E.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00045}00045     E.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 14;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00046}00046     alfabeto[4] = E;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00048}00048     \mbox{\hyperlink{structDADOS}{DADOS}} F;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00049}00049     F.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00050}00050     F.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 15;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00051}00051     alfabeto[5] = F;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00053}00053     \mbox{\hyperlink{structDADOS}{DADOS}} N;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00054}00054     N.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7a4618cf21306b3c647741afa7ebefcab8}{CHAR}};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00055}00055     N.celula.\mbox{\hyperlink{structDADOS_a31d90ca57d6b333d9a43ddc0181d2711}{CHAR}} = \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00056}00056     alfabeto[13] = N;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00058}00058     \mbox{\hyperlink{structDADOS}{DADOS}} S;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00059}00059     S.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7a4618cf21306b3c647741afa7ebefcab8}{CHAR}};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00060}00060     S.celula.\mbox{\hyperlink{structDADOS_a31d90ca57d6b333d9a43ddc0181d2711}{CHAR}} = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00061}00061     alfabeto[18] = S;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00063}00063     \mbox{\hyperlink{structDADOS}{DADOS}} X;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00064}00064     X.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00065}00065     X.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00066}00066     alfabeto[23] = X;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00068}00068     \mbox{\hyperlink{structDADOS}{DADOS}} Y;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00069}00069     Y.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00070}00070     Y.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 1;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00071}00071     alfabeto[24] = Y;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00073}00073     \mbox{\hyperlink{structDADOS}{DADOS}} Z;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00074}00074     Z.\mbox{\hyperlink{structDADOS_ae9e10266fc33543efc50d1a474ccc253}{type}} = \mbox{\hyperlink{library_8h_a0bc6723d5d4776ab7cdc646728b775f7aaee055c4a5aba7d55774e4f1c01dacea}{LONG}};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00075}00075     Z.celula.\mbox{\hyperlink{structDADOS_aecc1b15331d0d89d19ffb79b9c62dbf9}{LONG}} = 2;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00076}00076     alfabeto[25] = Z;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00078}00078     \mbox{\hyperlink{functions_8c_aaceecf8c6a3b84f34ea800676d53de8b}{doCase}} (s, token, alfabeto);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00079}00079     \mbox{\hyperlink{library_8c_ad0abe05393e31e10c053d65792a65d30}{imprime\_stack}}(s);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00081}00081     free(s);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00082}00082     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00083}00083 \}}
+
+\end{DoxyCode}
